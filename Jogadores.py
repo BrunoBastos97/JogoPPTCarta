@@ -3,9 +3,7 @@ from Cartas import *
 
 class Jogadores:
     nome_dos_jogadores = []
-    cartas_do_jogador = [["Pedra", "Pedra", "Papel"], ["Pedra", "Pedra", "Papel"]]
-    # cartas_do_jogador = []
-    cartas_jogadas = []
+    cartas_do_jogador = []
 
     def adicionar_jogador(self):
         for i in range(0, 2):
@@ -15,9 +13,8 @@ class Jogadores:
 
     def entregar_cartas(self):
         for i in range(len(self.nome_dos_jogadores)):
-            print("")
-            # cartas = Cartas().distribuir_cartas()
-            # self.cartas_do_jogador.append(cartas)
+            cartas = Cartas().distribuir_cartas()
+            self.cartas_do_jogador.append(cartas)
 
     def jogar_carta(self):
         cartaExiste = False

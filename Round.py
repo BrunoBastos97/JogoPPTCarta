@@ -46,7 +46,6 @@ class Round:
                     else:
                         print("O jogador " +jogador+ " não tem está carta!")
             self.ganhador = self.ganhador_da_mao(cartas_jogadas)
-
             if self.ganhador:
                 break
 
